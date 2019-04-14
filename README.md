@@ -1,1 +1,1 @@
-# numericalIntegration
+# newton-cotes
