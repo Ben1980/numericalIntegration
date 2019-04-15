@@ -1,12 +1,11 @@
 # numericalIntegration
 
-A collection of numerical integration methods, as discussed on [thoughts-on-cpp.com](https://thoughts-on-cpp.com/2019/04/17/numerical-methods-in-c-part-1-newton-cotes-integration).
+A collection of numerical integration methods, as discussed on [thoughts-on-cpp.com](https://thoughts-on-cpp.com).
 
-List of implementations
-- Newton-Cotes
-  - Trapezoidal
-  - Simpson rule
-  - Romberg
+[Numerical Methods in C++ Part 1: Newton-Cotes Integration](https://thoughts-on-cpp.com/2019/04/17/numerical-methods-in-c-part-1-newton-cotes-integration)
+- Trapezoidal
+- Simpson rule
+- Romberg
 
 ## Getting Started
 
