@@ -4,12 +4,12 @@
 #include <vector>
 
 double trapezoidalIntegral(double a, double b, size_t n, const std::function<double (double)> &f) {
-    const double stepSize = (b-a)/n;
+    const double width = (b-a)/n;
 
     double trapezoidal_integral = 0;
     for(size_t step = 0; step < n; step++) {
-        const double x1 = a + step*stepSize;
-        const double x2 = a + (step+1)*stepSize;
+        const double x1 = a + step*width;
+        const double x2 = a + (step+1)*width;
 
         trapezoidal_integral += 0.5*(x2-x1)*(f(x1) + f(x2));
     }
@@ -18,12 +18,12 @@ double trapezoidalIntegral(double a, double b, size_t n, const std::function<dou
 }
 
 double simpsonIntegral(double a, double b, size_t n, const std::function<double (double)> &f) {
-    const double stepSize = (b-a)/n;
+    const double width = (b-a)/n;
 
     double simpson_integral = 0;
     for(size_t step = 0; step < n; step++) {
-        const double x1 = a + step*stepSize;
-        const double x2 = a + (step+1)*stepSize;
+        const double x1 = a + step*width;
+        const double x2 = a + (step+1)*width;
 
         simpson_integral += (x2-x1)/6.0*(f(x1) + 4.0*f(0.5*(x1+x2)) + f(x2));
     }
