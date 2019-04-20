@@ -7,6 +7,9 @@ A collection of numerical integration methods, as discussed on [thoughts-on-cpp.
 - Simpson rule
 - Romberg
 
+[Numerical Methods in C++ Part 2: Gauss-Legendre Integration](https://thoughts-on-cpp.com/2019/04/24/numerical-methods-in-c-part-2-gauss-legendre-integration)
+- Gauss-Legendre
+
 ## Getting Started
 
 To get it up and running you just need to execute:
@@ -15,7 +18,7 @@ To get it up and running you just need to execute:
 
 You can execute the program by `./numericalIntegration`
 
-![Screen capture of programm execution](newtonCotes.gif)
+![Screen capture of programm execution](numericalIntegration.gif)
 
 ### Prerequisites
 
