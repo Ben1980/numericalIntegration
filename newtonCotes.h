@@ -1,7 +1,8 @@
-#include <fmt/format.h>
-#include <functional>
-#include <cmath>
+#ifndef NEWTONCOTES_H
+#define NEWTONCOTES_H
+
 #include <vector>
+#include <functional>
 
 double trapezoidalIntegral(double a, double b, size_t n, const std::function<double (double)> &f) {
     const double width = (b-a)/n;
@@ -60,32 +61,4 @@ std::vector<std::vector<double>> rombergIntegral(double a, double b, size_t n, c
     return romberg_integral;
 }
 
-int main() {
-    auto func = [](double x) {
-        return 5.0/(std::pow(M_E, M_PI) - 2.0) * exp(2.0*x) * cos(x);
-    };
-
-    const double trapeze = trapezoidalIntegral(0, M_PI_2, 4, func);
-    const double simpson = simpsonIntegral(0, M_PI_2, 4, func);
-    const std::vector<std::vector<double>> romberg = rombergIntegral(0, M_PI_2, 4, func);
-
-    fmt::print("Solving Integral for 5/(e^pi - 2) * exp(2x) * cos(x) from 0 to pi/2 \n");
-    fmt::print("With n = 4, h = (b-a)/n, a = 0, b = pi/2 -> h = pi/8 \n\n");
-
-    fmt::print("Rule    |  h   |{:<10}|{:<10}|{:<10}\n", "~I", "I", "I-~I");
-    fmt::print("----------------------------------------------------------- \n");
-    fmt::print("trapeze | pi/8 |{:<10}|{:<10}|{:<10}\n", trapeze, 1.0, 1.0-trapeze);
-    fmt::print("simpson | pi/8 |{:<10}|{:<10}|{:<10}\n", simpson, 1.0, 1.0-simpson);
-    fmt::print("romberg | pi/8 |{:<10}|{:<10}|{:<10}\n\n", romberg.back().back(), 1.0, 1.0-romberg.back().back());
-
-    int m=0;
-    fmt::print("Romberg results:\n");
-    fmt::print("m   |{:<10}|{:<10}|{:<10}|{:<10}\n", "R(m,0)", "R(m,1)", "R(m,2)", "R(m,3)");
-    for(const auto & row : romberg) {
-        fmt::print("{}   ", m++);
-        for(const auto & column : row) {
-            fmt::print("|{:<10}", column);
-        }
-        fmt::print("\n");
-    }
-}
+#endif
