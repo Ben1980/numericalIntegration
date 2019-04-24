@@ -7,7 +7,7 @@ A collection of numerical integration methods, as discussed on [thoughts-on-cpp.
 - Simpson rule
 - Romberg
 
-[Numerical Methods in C++ Part 2: Gauss-Legendre Integration](https://thoughts-on-cpp.com/2019/04/24/numerical-methods-in-c-part-2-gauss-legendre-integration)
+[Numerical Methods in C++ Part 2: Gauss-Legendre Integration](https://thoughts-on-cpp.com/2019/04/25/numerical-methods-in-c-part-2-gauss-legendre-integration)
 - Gauss-Legendre
 
 ## Getting Started
