@@ -36,10 +36,10 @@ private:
             double root = cos(M_PI * (step-0.25)/(mNumberOfIterations+0.5));
             Result result = calculatePolynomialValueAndDerivative(root);
 
-            double ratio;
+            double newtonRaphsonRatio;
             do {
-                ratio = result.value/result.derivative;
-                root -= ratio;
+                newtonRaphsonRatio = result.value/result.derivative;
+                root -= newtonRaphsonRatio;
                 result = calculatePolynomialValueAndDerivative(root);
             } while (fabs(ratio) > EPSILON);
 
