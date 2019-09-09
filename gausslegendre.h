@@ -41,7 +41,7 @@ private:
                 newtonRaphsonRatio = result.value/result.derivative;
                 root -= newtonRaphsonRatio;
                 result = calculatePolynomialValueAndDerivative(root);
-            } while (fabs(ratio) > EPSILON);
+            } while (fabs(newtonRaphsonRatio) > EPSILON);
 
             mRoot[step] = root;
             mWeight[step] = 2.0/((1-root*root)*result.derivative*result.derivative);
