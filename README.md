@@ -2,12 +2,12 @@
 
 A collection of numerical integration methods, as discussed on [thoughts-on-coding.com](https://thoughts-on-coding.com).
 
-[Numerical Methods in C++ Part 1: Newton-Cotes Integration](https://thoughts-on-coding.com/2019/04/17/numerical-methods-in-c-part-1-newton-cotes-integration)
+[Numerical Methods in C++ Part 1: Newton-Cotes Integration](https://thoughts-on-coding.com/2019/04/17/numerical-methods-in-cpp-part-1-newton-cotes-integration)
 - Trapezoidal
 - Simpson rule
 - Romberg
 
-[Numerical Methods in C++ Part 2: Gauss-Legendre Integration](https://thoughts-on-coding.com/2019/04/25/numerical-methods-in-c-part-2-gauss-legendre-integration)
+[Numerical Methods in C++ Part 2: Gauss-Legendre Integration](https://thoughts-on-coding.com/2019/04/25/numerical-methods-in-cpp-part-2-gauss-legendre-integration)
 - Gauss-Legendre
 
 ## Getting Started
